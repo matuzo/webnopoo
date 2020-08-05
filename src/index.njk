@@ -4,6 +4,14 @@ eleventyNavigation:
   key: Home
 ---
 
-<div class="container">
-    <h1>A blank 11ty project.</h1>
-</div>
+
+{%- for tip in collections.tips | reverse -%}
+  <article class="tip">
+    <h2 class="tip__heading" data-count="{{ tip.data.num }}">{{ tip.data.title }}</h2>
+    <div class="tip__content">
+      {{ tip.templateContent | safe }}
+
+      <a href="{{ tip.url }}" class="tip__share">Share Tip {{ loop.revindex }}</a>
+    </div>
+  </article>
+{%- endfor -%}

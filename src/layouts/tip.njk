@@ -1,0 +1,37 @@
+---
+layout: base
+---
+
+<div class="send wrap" hidden tabindex="-1" role="status">
+    <p>Send this piece of advice to someone who needs to hear it.</p>
+
+    <form>
+        <div>Dear 
+        <label class="u-vh" for="to">Recipient name</label>
+        <input type="text" id="to">,</div>
+
+        <label class="u-vh" for="message">Your personal message</label>
+        <textarea id="message">{{ message | safe }}</textarea>
+    <div>
+        Yours truly,<br>
+        <label class="u-vh" for="from">Your name</label>
+        <input type="text" id="from" />
+    </div>
+        <button type="submit">Generate message</button>
+    </form>
+
+</div>
+
+<form class="wrap js-copy-wrappper" hidden>
+    <label for="copy" class="u-vh">Copy link</label>
+    <input type="text" id="copy">
+    <button type="button" class="js-copy">Copy Link</button>
+</form>
+
+<article class="tip">
+    <h2 class="tip__heading" data-count="{{ num }}">{{ title }}</h2>
+    <div class="tip__content">
+        {{ content | safe }}
+    </div>
+</article>
+

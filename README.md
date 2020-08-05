@@ -1,8 +1,6 @@
-# Eleventastic
+# How to not turn your website into a pile of poo
 
-A simple Eleventy Starter Kit, my base for all new 11ty projects. ([Demo Site](https://eleventastic.netlify.com))
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f78ec52d-8328-4e40-b6da-a0f9164e80d1/deploy-status)](https://app.netlify.com/sites/eleventastic/deploys)
+Based on [Eleventastic](https://github.com/maxboeck/eleventastic)
 
 ## Features
 
@@ -25,10 +23,6 @@ npm install
 
 * Run `npm start` for a development server and live reloading
 * Run `npm run build` to generate a production build
-
-## Deploy a fork of this template to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxboeck/eleventastic)
 
 ## CSS
 
